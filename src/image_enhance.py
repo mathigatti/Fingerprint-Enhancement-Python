@@ -24,8 +24,9 @@ def image_enhance(img):
     windsze = 5;
     minWaveLength = 5;
     maxWaveLength = 15;
-    freq,medfreq = ridge_freq(normim, mask, orientim, blksze, windsze, minWaveLength,maxWaveLength);    #find the overall frequency of ridges
-    
+    #freq,medfreq = ridge_freq(normim, mask, orientim, blksze, windsze, minWaveLength,maxWaveLength);    #find the overall frequency of ridges
+    freq = 1.0
+    medfreq = 1.0
     
     freq = medfreq*mask;
     kx = 0.65;ky = 0.65;
