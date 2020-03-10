@@ -10,7 +10,7 @@ from ridge_freq import ridge_freq
 from ridge_filter import ridge_filter
 
 def image_enhance(img):
-    blksze = 64;
+    blksze = 16;
     thresh = 0.1;
     normim,mask = ridge_segment(img,blksze,thresh);             # normalise the image and find a ROI
 
@@ -20,10 +20,10 @@ def image_enhance(img):
     #orientim = ridge_orient(normim, gradientsigma, blocksigma, orientsmoothsigma);              # find orientation of every pixel
 
 
-    blksze = 38;
+    blksze = 16;
     windsze = 5;
     minWaveLength = 4;
-    maxWaveLength = 15;
+    maxWaveLength = 16;
     #freq,medfreq = ridge_freq(normim, mask, orientim, blksze, windsze, minWaveLength,maxWaveLength);    #find the overall frequency of ridges
     
     
