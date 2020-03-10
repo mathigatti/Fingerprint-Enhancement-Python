@@ -20,10 +20,10 @@ def image_enhance(img):
     orientim = ridge_orient(normim, gradientsigma, blocksigma, orientsmoothsigma);              # find orientation of every pixel
 
 
-    #blksze = 38;
+    blksze = 38;
     windsze = 5;
     minWaveLength = 5;
-    maxWaveLength = 15;
+    maxWaveLength = 30;
     freq,medfreq = ridge_freq(normim, mask, orientim, blksze, windsze, minWaveLength,maxWaveLength);    #find the overall frequency of ridges
     
     
