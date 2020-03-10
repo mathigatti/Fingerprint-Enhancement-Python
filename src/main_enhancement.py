@@ -27,10 +27,9 @@ if __name__ == '__main__':
     rows,cols = np.shape(img);
     aspect_ratio = np.double(rows)/np.double(cols);
 
-    new_rows = 350;             # randomly selected number
-    new_cols = new_rows/aspect_ratio;
-
-    img = cv2.resize(img,(np.int(new_cols),np.int(new_rows)));
+    #new_rows = 350;             # randomly selected number
+    #new_cols = new_rows/aspect_ratio;
+    #img = cv2.resize(img,(np.int(new_cols),np.int(new_rows)));
 
     enhanced_img = image_enhance(img);
 
