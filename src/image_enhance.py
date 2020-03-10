@@ -28,10 +28,10 @@ def image_enhance(img):
     
     
     #freq = medfreq*mask;
-    #kx = 0.65;ky = 0.65;
-    #newim = ridge_filter(normim, orientim, freq, kx, ky);       # create gabor filter and do the actual filtering
+    kx = 0.65;ky = 0.65;
+    newim = ridge_filter(normim, orientim, freq, kx, ky);       # create gabor filter and do the actual filtering
     
     
     #th, bin_im = cv2.threshold(np.uint8(newim),0,255,cv2.THRESH_BINARY);
     #return(newim < -3)
-    return freq
+    return newim
