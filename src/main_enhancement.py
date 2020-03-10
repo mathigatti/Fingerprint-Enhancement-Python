@@ -16,10 +16,10 @@ if __name__ == '__main__':
     if(len(sys.argv)<2):
         print('loading sample image');
         img_name = '1.jpg'
-        img = cv2.imread('../images/' + img_name)
+        img = cv2.imread(img_name)
     elif(len(sys.argv) >= 2):
         img_name = sys.argv[1];
-        img = cv2.imread('../images/' + img_name)
+        img = cv2.imread(img_name)
 
     if(len(img.shape)>2):
          img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
