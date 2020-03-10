@@ -27,7 +27,7 @@ def image_enhance(img):
     #freq,medfreq = ridge_freq(normim, mask, orientim, blksze, windsze, minWaveLength,maxWaveLength);    #find the overall frequency of ridges
     
     
-    freq = medfreq*mask;
+    #freq = medfreq*mask;
     kx = 0.65;ky = 0.65;
     #newim = ridge_filter(normim, orientim, freq, kx, ky);       # create gabor filter and do the actual filtering
     
