@@ -35,6 +35,6 @@ if __name__ == '__main__':
     enhanced_img = image_enhance(img);
 
     print('saving the image')
-    cv2.imwrite('../enhanced/' + img_name, (255*enhanced_img))
+    cv2.imwrite('../enhanced/' + img_name.split("/")[-1], (255*enhanced_img))
 
 
