@@ -20,7 +20,7 @@ def image_enhance(img):
     orientim = ridge_orient(normim, gradientsigma, blocksigma, orientsmoothsigma);              # find orientation of every pixel
 
 
-    blksze = 16;
+    blksze = 32;
     windsze = 5;
     minWaveLength = 4;
     maxWaveLength = 16;
