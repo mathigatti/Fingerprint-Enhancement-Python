@@ -17,21 +17,21 @@ def image_enhance(img):
     gradientsigma = 1;
     blocksigma = 7;
     orientsmoothsigma = 7;
-    #orientim = ridge_orient(normim, gradientsigma, blocksigma, orientsmoothsigma);              # find orientation of every pixel
+    orientim = ridge_orient(normim, gradientsigma, blocksigma, orientsmoothsigma);              # find orientation of every pixel
 
 
     blksze = 16;
     windsze = 5;
     minWaveLength = 4;
     maxWaveLength = 16;
-    #freq,medfreq = ridge_freq(normim, mask, orientim, blksze, windsze, minWaveLength,maxWaveLength);    #find the overall frequency of ridges
+    freq,medfreq = ridge_freq(normim, mask, orientim, blksze, windsze, minWaveLength,maxWaveLength);    #find the overall frequency of ridges
     
     
     #freq = medfreq*mask;
-    kx = 0.65;ky = 0.65;
+    #kx = 0.65;ky = 0.65;
     #newim = ridge_filter(normim, orientim, freq, kx, ky);       # create gabor filter and do the actual filtering
     
     
     #th, bin_im = cv2.threshold(np.uint8(newim),0,255,cv2.THRESH_BINARY);
     #return(newim < -3)
-    return mask
+    return freq
